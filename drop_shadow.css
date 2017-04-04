@@ -1,0 +1,112 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+.box p{
+	text-align:center;
+	position:relative;
+	margin-top:40%;
+  font-size: 30px;
+}
+.box {
+	background:#58D3F7;
+	margin:40px auto;
+}
+
+.navbar{
+  background-color: #FF8000;
+}
+.navbar , .nav > li >a{
+  background-color: #FF8000;
+  color:#fbfbfb;
+}
+
+.navbar-brand{
+  font-family: 'Helvetica,cursive';
+  font-size: 28px;
+  color:#f2f2f2;
+}
+/*==================================================
+ * shadow 1
+ * ===============================================*/
+.shadow1{
+     box-shadow: 0 10px 6px -6px #585858;
+}
+/*==================================================
+ * shadow 2
+ * ===============================================*/
+.shadow2
+{
+  position: relative;
+}
+/* now place a shadow effect before and after the box*/
+.shadow2:before, .shadow2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #585858;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+.shadow2:after
+{
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+/*==================================================
+ * shadow 3
+ * ===============================================*/
+.shadow3
+{
+  position: relative;
+}
+.shadow3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+/*==================================================
+ * shadow 3
+ * ===============================================*/
+.shadow3
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shadow3:before, .shadow3:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    border-radius:100px / 10px;
+} 
+.shadow3:after
+{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
