@@ -1,3 +1,8 @@
+/* ---------------------------------------
+     Shadow using CSS
+     Author: Sowmya
+     Site: sowmyaporfolio.firebaseapp.com
+------------------------------------------*/
 @media only screen and (min-width: 1024px) {
     /* For larger desktop: */
     .col-1 {width: 8.33%;}
